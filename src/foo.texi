@@ -1,0 +1,93 @@
+\input texinfo
+@setfilename 3d_viewer_v2.0.info
+@documentencoding UTF-8
+
+@settitle 3d_viewer
+
+@copying
+Copyright (c) hjerilyn tblitzcr 2022
+@end copying
+
+@titlepage
+@title 3d_viewer
+@subtitle «3d_viewer_v2.0»
+@author hjerilyn tblitzcr
+
+@vskip 0pt plus 1filll
+@insertcopying
+@end titlepage
+
+@headings off
+
+@contents
+
+@ifnottex
+@node Top
+@top Foo Compiler
+@insertcopying
+@end ifnottex
+
+@menu
+* Description:                
+* Bonus functions::              
+@end menu
+
+@node Description
+@chapter Description
+
+@itemize @bullet
+@item
+3DViewer is a program for visualizing a wireframe model in 3D space. Designed to load a wireframe 3d model of an object from an .obj file.
+
+@item
+Main functions:
+
+@itemize @minus
+@item
+Displaying on the application screen a wireframe 3d model of an object loaded from an .obj file.
+@item
+The ability to move the 3d model of an object on the screen along the x, y, z axes by a given number of units.
+@item
+The ability to rotate the 3d model of an object on the application screen around the x, y, z axes by a given value of the rotation angle in degrees.
+@item
+The ability to increase and decrease the 3d-model of the object on the screen in accordance with the specified coefficient.
+@end itemize
+
+@end itemize
+
+@node Bonus functions
+@chapter Bonus functions
+
+@itemize @bullet
+@item
+In the additional settings under the displayed 3d model, you can select:
+
+@itemize @minus
+@item
+Type of projection - central and parallel;
+@item
+Background color;
+@item
+Type of edges - solid and dotted;
+@item
+Color of edges;
+@item
+Size of edges;
+@item
+Type of vertices - none, round or square;
+@item
+Color of vertices;
+@item
+Size of vertices;
+@end itemize
+
+@item
+Settings are saved between application restarts. in config.txt file, on button "Save".
+@item
+By clicking the "JPEG" button, you can save the displayed 3d model on the screen as a file in the .jpeg format.
+@item
+By clicking the ".GIF" button, you can save a GIF from a small screencast recorded after pressing the button.
+
+@end itemize
+
+@bye
