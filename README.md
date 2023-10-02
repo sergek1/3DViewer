@@ -22,4 +22,4 @@
 ![3DViewer](screenshots/4.png)
 
 Запись аффинных преобразований объекта в gif-анимацию:  
-![](https://github.com/sergek1/3DViewer/tree/main/materials/lamp.gif)
+![3DViewer](https://github.com/sergek1/3DViewer/blob/main/materials/lamp.gif)
