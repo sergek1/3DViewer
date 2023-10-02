@@ -30,7 +30,8 @@ void GLWidget::paintGL() {
   if (settings_->get_projection_type() == 0)
     glOrtho(-100, 100, -100, 100, -100, 1000);
   else
-    gluPerspective(100, 1.2, 0.1, 1000.0);
+      glFrustum(-10,10,-10,10,10,150);
+//    gluPerspective(100, 1.2, 0.1, 1000.0);
   glMatrixMode(GL_MODELVIEW);
   glLoadIdentity();
   glRotatef(xRot, 1, 0, 0);

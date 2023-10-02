@@ -1,7 +1,7 @@
 #ifndef CPP4_3DVIEWER_V2_0_0_SRC_APP_VIEW_GLWIDGET_H_
 #define CPP4_3DVIEWER_V2_0_0_SRC_APP_VIEW_GLWIDGET_H_
 
-#include <OpenGL/glu.h>
+//#include <OpenGL/glu.h>
 
 #include <QColorDialog>
 #include <QOpenGLWidget>

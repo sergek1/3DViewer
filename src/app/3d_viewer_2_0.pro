@@ -27,6 +27,10 @@ HEADERS += \
 FORMS += \
     view/mainwindow.ui
 
+#LIBS += -lGL
+#LIBS += -lGLU
+#INCLUDEPATH += /usr/include
+
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin

@@ -79,9 +79,10 @@ void MainWindow::TimerSlot() {
   gif_->addFrame(*photo_, 100);
   if (time_ == 50) {
     timer_->stop();
+    QString file_name = correct_file_name_;
     QString path = QFileDialog::getExistingDirectory();
-    correct_file_name_.resize(correct_file_name_.size() - 4);
-    gif_->save(path + "/" + correct_file_name_ + ".gif");
+    file_name.resize(file_name.size() - 4);
+    gif_->save(path + "/" + file_name + ".gif");
     delete gif_;
   }
 }
@@ -99,13 +100,14 @@ void MainWindow::on_angle_z_valueChanged(int arg1) {
 }
 
 void MainWindow::on_save_image_clicked() {
-  if (correct_file_name_.size()) {
+  QString file_name = correct_file_name_;
+  if (file_name.size()) {
     QString path = QFileDialog::getExistingDirectory();
-    correct_file_name_.resize(correct_file_name_.size() - 4);
+    file_name.resize(file_name.size() - 4);
     ui_->GLwidget->grabFramebuffer().save(
-        path + "/" + correct_file_name_ + ".jpeg", NULL, 100);
+        path + "/" + file_name + ".jpeg", NULL, 100);
     ui_->GLwidget->grabFramebuffer().save(
-        path + "/" + correct_file_name_ + ".bmp", NULL, 100);
+        path + "/" + file_name + ".bmp", NULL, 100);
   }
 }
 

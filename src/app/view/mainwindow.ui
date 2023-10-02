@@ -119,7 +119,7 @@
            </font>
           </property>
           <property name="text">
-           <string>POSITION</string>
+           <string>Position</string>
           </property>
           <property name="alignment">
            <set>Qt::AlignCenter</set>
@@ -318,7 +318,7 @@
            </font>
           </property>
           <property name="text">
-           <string>ROTATION</string>
+           <string>Rotation</string>
           </property>
           <property name="alignment">
            <set>Qt::AlignCenter</set>
@@ -487,7 +487,7 @@
            </font>
           </property>
           <property name="text">
-           <string>SCALE</string>
+           <string>Scale</string>
           </property>
           <property name="alignment">
            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -566,7 +566,7 @@
            </font>
           </property>
           <property name="text">
-           <string>PROJECTION TYPE</string>
+           <string>Projection type</string>
           </property>
           <property name="alignment">
            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>

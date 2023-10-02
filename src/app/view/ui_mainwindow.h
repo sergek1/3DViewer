@@ -550,23 +550,23 @@ class Ui_MainWindow {
     file_name->setText(QString());
     vertexes_edges->setText(QString());
     label->setText(
-        QCoreApplication::translate("MainWindow", "POSITION", nullptr));
+        QCoreApplication::translate("MainWindow", "Position", nullptr));
     label_14->setText(QCoreApplication::translate("MainWindow", "X:", nullptr));
     label_13->setText(QCoreApplication::translate("MainWindow", "Y:", nullptr));
     label_12->setText(QCoreApplication::translate("MainWindow", "Z:", nullptr));
     label_7->setText(
-        QCoreApplication::translate("MainWindow", "ROTATION", nullptr));
+        QCoreApplication::translate("MainWindow", "Rotation", nullptr));
     label_16->setText(
         QCoreApplication::translate("MainWindow", "OX:", nullptr));
     label_15->setText(
         QCoreApplication::translate("MainWindow", "OY:", nullptr));
     label_3->setText(QCoreApplication::translate("MainWindow", "OZ:", nullptr));
     label_2->setText(
-        QCoreApplication::translate("MainWindow", "SCALE", nullptr));
+        QCoreApplication::translate("MainWindow", "Scale", nullptr));
     label_4->setText(QString());
     label_6->setText(QString());
     label_23->setText(
-        QCoreApplication::translate("MainWindow", "PROJECTION TYPE", nullptr));
+        QCoreApplication::translate("MainWindow", "Projection type", nullptr));
     projection_type->setItemText(
         0, QCoreApplication::translate("MainWindow", "parallel", nullptr));
     projection_type->setItemText(
