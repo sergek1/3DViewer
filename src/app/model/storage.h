@@ -12,7 +12,7 @@ class Storage {
   Storage() : v_vector_(), f_vector_(), transformed_v_vector_() {}
   ~Storage() {}
 
-  std::string ReadFile(std::string file_name);
+  std::string ReadFile(const std::string& file_name);
   void Calculate();
   std::vector<double> &GetTransformedVertexes() {
     return transformed_v_vector_;
@@ -40,9 +40,9 @@ class Storage {
   std::vector<double> transformed_v_vector_;
   double delta_x_{}, delta_y_{}, delta_z_{}, angle_x_{}, angle_y_{}, angle_z_{};
   double scale_ = 1;
-  void CollectV(std::string line, size_t *pos);
-  void CollectF(std::string line);
-  double GetVertexCoordinate(std::string line, size_t *pos);
+  void CollectV(const std::string& line, size_t *pos);
+  void CollectF(const std::string& line);
+  double GetVertexCoordinate(const std::string& line, size_t *pos);
 };
 
 }  // namespace s21

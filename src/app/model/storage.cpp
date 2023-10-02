@@ -2,7 +2,7 @@
 
 namespace s21 {
 
-std::string Storage::ReadFile(std::string file_name) {
+std::string Storage::ReadFile(const std::string& file_name) {
   std::string correct_file_name;
   std::ifstream in(file_name);
   ClearStorage();
@@ -27,7 +27,7 @@ std::string Storage::ReadFile(std::string file_name) {
   return correct_file_name;
 }
 
-void Storage::CollectV(std::string line, size_t *pos) {
+void Storage::CollectV(const std::string& line, size_t *pos) {
   double x, y, z;
   x = GetVertexCoordinate(line, pos);
   if (line[*pos] != ' ') throw std::invalid_argument("Wrong File Format");
@@ -39,7 +39,7 @@ void Storage::CollectV(std::string line, size_t *pos) {
   v_vector_.push_back(z);
 }
 
-void Storage::CollectF(std::string line) {
+void Storage::CollectF(const std::string& line) {
   std::vector<uint32_t> polygon_vertexes;
   size_t n = line.find(' ');
   while (n != std::string::npos) {
@@ -51,7 +51,7 @@ void Storage::CollectF(std::string line) {
   f_vector_.push_back(std::move(polygon_vertexes));
 }
 
-double Storage::GetVertexCoordinate(std::string line, size_t *pos) {
+double Storage::GetVertexCoordinate(const std::string& line, size_t *pos) {
   double value{};
   size_t end_pos{};
   value = std::stod(line.substr(*pos), &end_pos);
